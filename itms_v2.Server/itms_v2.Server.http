@@ -1,0 +1,6 @@
+@itms_v2.Server_HostAddress = http://localhost:5110
+
+GET {{itms_v2.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
