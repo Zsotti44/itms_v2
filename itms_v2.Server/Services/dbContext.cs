@@ -19,6 +19,7 @@ namespace itms_v2.Server.Services
         public DbSet<ProductCategory> ProductCategorys { get; set; }
         public DbSet<Warehouse> Warehouses { get; set; }
         public DbSet<Workticket> Worktickets { get; set; }
+        public DbSet<WorkticketTemplate> WorkticketTemplates { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

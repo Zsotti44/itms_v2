@@ -88,6 +88,7 @@ namespace itms_v2.Server.Services.ShiftServices
                 .Include(t => t.trucks).ThenInclude(t => t.driver)
                 .Include(t => t.trucks).ThenInclude(t => t.trailer)
                 .FirstOrDefaultAsync(t => t.Id == addWorkTruck.shiftid);
+
             WorkTruck wt = new WorkTruck();
 
             wt.truck = await _context.Trucks.FindAsync(addWorkTruck.truck);
@@ -107,7 +108,5 @@ namespace itms_v2.Server.Services.ShiftServices
             serviceResponse.Data = await _context.Users.Where(d=> d.dispatcher == true).Select(d => _mapper.Map<Dispatcher>(d)).ToListAsync();
             return serviceResponse;
         }
-
-
     }
 }

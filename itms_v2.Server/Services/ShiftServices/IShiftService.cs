@@ -12,6 +12,5 @@ namespace itms_v2.Server.Services.ShiftServices
     Task<ServiceResponse<GetShiftFullDto>> UpdateWorkTruckById(UpdateWorkTruckDto updateWorkTruck);
     Task<ServiceResponse<GetShiftFullDto>> AddWorkTruck(AddWorkerDto addWorkTruck);
     Task<ServiceResponse<List<Dispatcher>>> getDispatcherSelectOptions();
-
     }
 }
