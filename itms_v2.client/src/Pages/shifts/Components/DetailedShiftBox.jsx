@@ -218,7 +218,7 @@ const DetailedShiftBox = (props) => {
         return params.row.working;
       },
     },
-    /*{
+    {
       field: "price",
       headerName: "Díj",
       width: 100,
@@ -227,7 +227,7 @@ const DetailedShiftBox = (props) => {
       valueGetter: (params) => {
         return params.row.price+" €";
       },
-    },*/
+    },
     {
       field: "actions",
       type: "actions",
